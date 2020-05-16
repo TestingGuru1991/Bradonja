@@ -1,0 +1,217 @@
+/* CSS Document */
+
+@media screen and (max-width: 1290px) {
+	#reklama_knjiga {
+		position: relative;
+		width: 100%;
+		clear: both;
+		top: 0;
+		padding-bottom: 0;
+		margin-bottom: 20px;
+	}
+	
+	#reklama_knjiga img {
+		width: 30%;
+		float: left;
+		border-radius: 10px;
+	}
+	
+	#reklama_knjiga h3 {
+		padding-top: 60px;
+	}
+	
+	#reklama_knjiga a {
+		font-size: 30px;	
+	}
+	
+	#reklama_knjiga h4 {
+		font-size: 24px;	
+	}
+	
+	#reklama_knjiga h5 {
+		font-size: 22px;
+	}
+}
+
+@media screen and (max-width: 785px) {
+	header nav li {
+		margin-left: 0;
+		padding: 2px 2px;
+	}
+	
+	nav ul li a{
+		width: 80px;
+		height: 40px;
+		line-height: 53px;
+		padding:0px;
+		font-size:14px;
+	}
+	
+	.dropdown a {
+		width: 80px;
+		font-size:14px;	
+	}
+	
+	#lections {
+		text-align: center;	
+	}
+	
+	article {
+		float: none;
+		display: inline-block;
+		text-align: left;	
+	}
+	
+	aside {
+		padding: 5%;
+		width: 90%;
+		clear: both;	
+	}
+	
+	#lections {
+		width: 100%;
+		clear: both;	
+	}
+	
+	.book-lections-about {
+		width: 100%;	
+	}
+	
+	#buy-book {
+		width: 100%;	
+	}
+	
+	/* kupi knjigu */
+	#reklama_knjiga h3 {
+		padding-top: 50px;
+	}
+	
+	#reklama_knjiga a {
+		font-size: 20px;	
+	}
+	
+	#reklama_knjiga h4 {
+		font-size: 14px;	
+	}
+	
+	#reklama_knjiga h5 {
+		font-size: 12px;
+	}
+	
+	/* dugmad za navigaciju kroz lekcije */
+	.button2 ul li {
+		display: block;
+	}
+	
+	/* kontakt label */
+	label {
+		margin-left: 35px;	
+	}
+}
+
+@media screen and (max-width: 630px) {
+	header nav li {
+		padding: 1px 1px;
+	}
+	
+	nav ul li a{
+		width: 55px;
+		font-size:12px;
+	}
+	
+	footer {
+		text-align: center;	
+	}
+	
+	footer p {
+		float: none;
+	}
+	
+	footer nav {
+		float: none;
+	}
+	
+	/* kupi knjigu */
+	#reklama_knjiga h3 {
+		padding-top: 14px;
+	}
+	
+	#reklama_knjiga a {
+		font-size: 16px;
+		padding: 15px;
+		background-color: #CCC;
+		border-radius: 10px;
+	}
+	
+	#reklama_knjiga h4 {
+		font-size: 12px;
+		padding: 5px;	
+	}
+	
+	#reklama_knjiga h5 {
+		font-size: 10px;
+		padding-bottom: 5px;
+	}
+	
+	/* kontakt label */
+	label {
+		margin-left: 30px;	
+	}
+}
+
+@media screen and (max-width: 480px) {
+	header nav {
+		float: none;
+		clear: both;
+	}
+	
+	header nav ul {
+		list-style: none;
+	}
+	
+	header nav li {
+		padding: 0;
+		float: none;
+		display: block;
+	}
+	
+	nav ul li a{
+		width: 100%;
+		font-size: 23px;
+	}
+	
+	.dropdown {
+		display: none;	
+	}	
+
+	/* kupi knjigu */
+	#reklama_knjiga img{
+		float: none;
+		width: 100%;
+		padding-bottom: 10px;
+	}
+	
+	#reklama_knjiga h3 {
+		padding-top: 0;
+	}
+	
+	#reklama_knjiga a {
+		font-size: 16px;
+		display: block;
+		width: 80%;
+		margin: 0 auto;	
+	}
+	
+	#reklama_knjiga h4 {
+		font-size: 14px;	
+	}
+	
+	#reklama_knjiga h5 {
+		font-size: 12px;
+	}
+	
+	/* kontakt label */
+	label {
+		margin-left: 20px;	
+	}
+}

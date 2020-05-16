@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet_responsive.css">
+    <title>HTML AKADEMIJA</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/meni.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+    	<header>
+        	<section>
+                <img src="img/logo.png" width="60" height="60" alt="logo">
+                <h1>BRADONJA</h1>
+                <h2>html akademija</h2>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">naslovna</a></li>
+                    <li><a href="prva_lekcija.html" onMouseOver="mopen('m1')" onMouseOut="mclosetime()">lekcije</a>
+                    	<div class="dropdown" id="m1" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+                            <a href="prva_lekcija.html">Lekcija 1</a>
+                            <a href="druga_lekcija.html">Lekcija 2</a>
+                            <a href="treca_lekcija.html">Lekcija 3</a>
+                            <a href="cetvrta_lekcija.html">Lekcija 4</a>
+                            <a href="peta_lekcija.html">Lekcija 5</a>
+                            <a href="test.html">Završni test</a>
+                        </div>
+                    </li>
+                    <li><a href="knjiga.html">knjiga</a></li>
+                    <li><a href="kontakt.html">kontakt</a></li>
+                </ul>
+            </nav>
+            <div id="banner"><img src="img/vizija-slika.png" alt="knjiga"></div>
+		</header>
+        <main>
+        <div id="reklama_knjiga">
+        	<img src="img/basic-html-stack-3.png" alt="html knjiga" title="HTML Knjiga"><br/>
+            <h3><a href="knjiga.html">KUPI SADA!</a></h3><br/>
+            <h4>HTML Knjiga</h4>
+            <h5>Uz Bradonju je lakše</h5><br/>
+            <h5><a href="download/bradonja.pdf" download="newfilename">ili preuzmi promo verziju</a></h5>
+            <div style="clear:both"></div>
+        </div>
+        	<a id="go_to_top"></a>
+            
+            <div class="descriptions2">
+              <div class="button2">
+                <ul>
+                	<li><a href="prva_lekcija.html" class="left_button">Prethodna</a></li>
+                    <li><a href="treca_lekcija.html" class="right_button">Sledeća</a></li>
+                    <li><a href="test.html" class="test_button">Završni test</a></li>
+                    <li><a href="#go_to_bottom" class="bottom_button">Idi na kraj</a></li>
+                 </ul>
+              </div>
+            </div>
+            
+        	<h2>Lekcija 2</h2>
+            <div class="slide">
+                <h3>Atributi</h3>
+                    <ul class="main_ul">
+                        <li>Atributi obezbeđuju dodatnu informaciju za tagove</li>
+                        <li>Tagovi mogu da imaju atribute</li>
+                        <li>Atributi su oblika ime=“vrednost”</li>
+                        <li>Atributi se uvek stavljaju u početni tag</li>
+                        <li>Primer:</li>
+                                <li class="second"><span class="light_blue">&lt;img src=“slika.gif”/&gt;</span></li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 1 -</b></span>
+				</div>
+                
+                <div class="slide">
+                <h3>Tagovi za formatiranje teksta</h3>
+                    <ul class="main_ul">
+                       <li>&lt;b&gt;</li>
+                            	<li class="second">bold, <b>podebljano</b></li>
+                        <li>&lt;i&gt;</li>
+                        		<li class="second">italic, <i>iskošeno</i></li>
+                        <li>&lt;u&gt;</li>
+                        		<li class="second">underline, <u>podvučeno</u></li>
+                        <li>&lt;sub&gt;</li>
+                        		<li class="second">subscript, <sub>dole</sub></li>
+                        <li>&lt;sup&gt;</li>
+                        		<li class="second">superscript, <sup>gore</sup></li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 2 -</b></span>
+				</div>
+                
+                <div class="slide">
+                <h3>Tagovi za formatiranje teksta - dopunski</h3>
+                    <ul class="main_ul">
+                       <li>&lt;big&gt;</li>
+                            	<li class="second">veća slova</li>
+                        <li>&lt;small&gt;</li>
+                        		<li class="second"><small>manja slova</small></li>
+                        <li>&lt;em&gt;</li>
+                        		<li class="second"><em>emphasized, naglašeno</em></li>
+                        <li>&lt;strong&gt;</li>
+                        		<li class="second"><strong>naglašeno</strong></li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 3 -</b></span>
+				</div>
+                
+                <div class="slide">
+                <h3>Tagovi za formatiranje teksta - ins i del</h3>
+                    <ul class="main_ul">
+                       <li>&lt;ins&gt;</li>
+                            	<li class="second"><ins>inserted, podvučen tekst</ins></li>
+                        <li>&lt;dell&gt;</li>
+                        		<li class="second">deleted, obrisan, precrtan tekst</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 4 -</b></span>
+				</div>
+                
+                <div class="slide">
+                <h3>“Kompjuterski” tagovi</h3>
+                    <ul class="main_ul">
+                       <li>&lt;code&gt;</li>
+                            	<li class="second">za kratke delove koda, unutar rečenice</li>
+                        <li>&lt;pre&gt;</li>
+                        		<li class="second">preformatted, sav sadržaj ovog taga se prikazuje u originalnom obliku, sa svim whitespace-ovima</li>
+                                <li class="second">pogodan za listinge</li>
+                        <li>&lt;var&gt;</li>
+                        		<li class="second"><var>za varijable u programu</var></li>
+                        <li>&lt;tt&gt;</li>
+                        		<li class="second">teletype text, teleprinter</li>
+                        <li>&lt;samp&gt;</li>
+                        		<li class="second"><samp>sample, uzorak</samp></li>
+                        <li>&lt;kbd&gt;</li>
+                        		<li class="second"><kbd>keyboard, za prikaz unosa sa tastature</kbd></li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 5 -</b></span>
+				</div>
+                
+                <div class="slide">
+                <h3>Skraćenice, citati, definicije</h3>
+                    <ul class="main_ul">
+                       <li>&lt;abbr title="objašnjenje"&gt;&lt;abbr&gt;</li>
+                            	<li class="second">Prinosom kursora miša tekstu ispod prikazuje se objašnjenje</li>
+                            	<li class="second"><abbr title="objašnjenje"><span class="light_blue">abbreviation, skraćenica</span></abbr></li>
+                        <li>&lt;acronym title="objašnjenje"&gt;&lt;acronym&gt;</li>
+                            	<li class="second">Prinosom kursora miša tekstu ispod prikazuje se akronim - WWW</li>
+                            	<li class="second"><span class="light_blue">akronim (WWW-World WideWeb)</span></li>
+                        <li>&lt;address&gt;</li>
+                        		<li class="second"><address>za definisanje adrese</address></li>
+                        <li>&lt;bdo dir="rtl"&gt;</li>
+                        		<li class="second">smer ispisa teksta (sa leva na desno i obrnuto></li>
+                                <li class="second">atribut dir (direction – smer): rtl, ltr</li>
+                                <li class="second"><bdo dir="ltr"><span class="red_text">sa leva na desno</span></bdo></li>
+                                <li class="second"><bdo dir="rtl"><span class="red_text">sa desna na levo</span></bdo></li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 6 -</b></span>
+				</div>
+                
+                <div class="slide">
+                <h3>Skraćenice, citati, definicije</h3>
+                    <ul class="main_ul">
+                       <li>&lt;blockquote&gt;</li>
+                            	<li class="second"><blockquote>duži citat</blockquote></li>
+                        <li>&lt;q&gt;</li>
+                                <li class="second"><q>kraći citat</q></li>
+                        <li>&lt;cite&gt;</li>
+                        		<li class="second"><cite>citat</cite></li>
+                        <li>&lt;dfn&gt;</li>
+                        		<li class="second"><dfn>za definicije u tekstu</dfn></li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 7 -</b></span>
+				</div>
+                
+                <div class="slide">
+                <h3>Specijalni karakteri</h3>
+                    <ul class="main_ul">
+                       <li>Character entity</li>
+                        <li>Karakteri koji su rezervisani za tagove (&lt;, &gt;, &amp;, itd.)</li>
+                        <li>Non-breaking Space</li>
+                        		<li class="second">razmaci koji se ne sažimaju u jedan</li>
+                                <li class="second">više običnih razmaka se prikazuju kao jedan</li>
+                                <li class="second">& nbsp ;</li>
+                        <li>Karakteri</li>
+                        		<li class="second">specijalni karakteri (£, €, itd.)</li>
+                                <li class="second">naša slova (š, đ, itd.)</li>
+                                <li class="second">ćirilica (ш, ђ, itd.)</li>
+                                <li class="second">ostalo, po Unicode standardu</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 8 -</b></span>
+				</div>
+                
+                <div class="slide">
+                <h3>Specijalni karakteri</h3>
+                    <ul class="main_ul">
+                       <li>Specijalni karakteri navode se u sledećem formatu:</li>
+                            	<li class="second">&amp;oznaka_karaktera;</li>
+                        <li>Primeri:</li>
+                                <li class="second">& amp ;</li>
+                                <li class="second">& lt ;</li>
+                                <li class="second">& gt ;</li>
+                                <li class="second">itd.</li>
+                        <li>Proizvoljan Unicode karakter može se navesti kao: </li>
+                        		<li class="second">&amp;#xhex_kod;</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 9 -</b></span>
+				</div>
+                
+
+		    <div class="descriptions2">
+              <div class="button2">
+                <ul>
+                	<li><a href="prva_lekcija.html" class="left_button">Prethodna</a></li>
+                    <li><a href="treca_lekcija.html" class="right_button">Sledeća</a></li>
+                    <li><a href="test.html" class="test_button">Završni test</a></li>
+                    <li><a href="#go_to_top" class="top_button">Idi na vrh</a></li>
+                 </ul>
+              </div>
+            </div>
+             <div style="clear:both"></div>
+          </main>
+		  <footer>
+				<p><a id="go_to_bottom">Copyright</a> &copy; Petar Mulaj</p>
+				<nav> <a href="index.html">naslovna</a>|<a href="prva_lekcija.html">lekcije</a>|<a href="knjiga.html">knjiga</a>|<a href="kontakt.html">kontakt</a></nav>
+          </footer>
+        
+	</div>
+</body>
+
+</html>

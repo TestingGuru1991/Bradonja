@@ -1,0 +1,158 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet_responsive.css">
+    <title>HTML AKADEMIJA</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/meni.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+    	<header>
+        	<section>
+                <img src="img/logo.png" width="60" height="60" alt="logo">
+                <h1>BRADONJA</h1>
+                <h2>html akademija</h2>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">naslovna</a></li>
+                    <li><a href="prva_lekcija.html" onMouseOver="mopen('m1')" onMouseOut="mclosetime()">lekcije</a>
+                    	<div class="dropdown" id="m1" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+                            <a href="prva_lekcija.html">Lekcija 1</a>
+                            <a href="druga_lekcija.html">Lekcija 2</a>
+                            <a href="treca_lekcija.html">Lekcija 3</a>
+                            <a href="cetvrta_lekcija.html">Lekcija 4</a>
+                            <a href="peta_lekcija.html">Lekcija 5</a>
+                            <a href="test.html">Završni test</a>
+                        </div>
+                    </li>
+                    <li><a href="knjiga.html">knjiga</a></li>
+                    <li><a href="kontakt.html">kontakt</a></li>
+                </ul>
+            </nav>
+            <div id="banner"><img src="img/vizija-slika.png" alt="knjiga"></div>
+		</header>
+        <main>
+        <div id="reklama_knjiga">
+        	<img src="img/basic-html-stack-3.png" alt="html knjiga" title="HTML Knjiga"><br/>
+            <h3><a href="knjiga.html">KUPI SADA!</a></h3><br/>
+            <h4>HTML Knjiga</h4>
+            <h5>Uz Bradonju je lakše</h5><br/>
+            <h5><a href="download/bradonja.pdf" download="newfilename">ili preuzmi promo verziju</a></h5>
+            <div style="clear:both"></div>
+        </div>
+        	<a id="go_to_top"></a>
+            
+            <div class="descriptions2">
+              <div class="button2">
+                <ul>
+                	<li><a href="druga_lekcija.html" class="left_button">Prethodna</a></li>
+                    <li><a href="cetvrta_lekcija.html" class="right_button">Sledeća</a></li>
+                    <li><a href="test.html" class="test_button">Završni test</a></li>
+                    <li><a href="#go_to_bottom" class="bottom_button">Idi na kraj</a></li>
+                 </ul>
+              </div>
+            </div>
+            
+        	<h2>Lekcija 3</h2>
+            <div class="slide">
+                <h3>Unicode</h3>
+                    <ul class="main_ul">
+                        <li>Organizacija koja definiše standard po pitanju kodiranja slova u računarima</li>
+                        <li>Jedno slovo/karakter je u Unicode standardu trenutno 20-bitno</li>
+                                <li class="second">zove se code point</li>
+                        <li>Tri reprezentacije:</li>
+                                <li class="second">UTF-8 (http://tools.ietf.org/html/rfc3629)</li>
+                                     <li class="third">jedan bajt za karakter sa vrednošću od U+0000 do U+007F</li>
+                                     <li class="third">dva bajta za karakter sa vrednošću od U+0080 do U+07FF</li>
+                                     <li class="third">tri bajta za karaktere u opsegu od U+0800 do U+FFFF</li>
+                                     <li class="third">četiri bajta za karaktere u opsegu od U+10000 do U+10FFFF</li>
+                            
+                        		<li class="second">UTF-16</li>
+                                        <li class="third">svaki code point se prikazuje code unit-ima, koji su 16-bitni</li>
+                                        <li class="third">ako je code point u rasponu od U+0000 do U+FFFF, onda je on smešten u basic multilingual plane i prikazuje se jednim code unit-om (samo 16 bita)</li>
+                                        <li class="third">preostali Unicode karakteri su smešteni u opseg U+10000 do U+10FFFF, a repezentovani su sa dva code unit-a</li>
+                                <li class="third">ovakvi karakteri se zovu supplementary characters
+                                <li class="second">UTF-32</li>
+										<li class="third">četiri bajta po slovu</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 1 -</b></span>
+				</div>
+                
+                <div class="slide">
+                	<h3>Unicode</h3>
+                    <img src="img/unicode.png" alt="unicode" title="unicode"/>
+                    <span class="pagination_slide"><b>- Slajd 2 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>Unicode</h3>
+                    <img src="img/unicode2.png" alt="unicode" title="unicode"/>
+                    <span class="pagination_slide"><b>- Slajd 3 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>Unicode</h3>
+                    <img src="img/unicode3.png" alt="unicode" title="unicode"/>
+                    <span class="pagination_slide"><b>- Slajd 4 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>Primer</h3>
+                    <img src="img/primer3.png" alt="primer" title="primer"/>
+                    <p><br/>kao rezultat se dobija:</p>
+                    <img src="img/primer3-1.png" alt="primer" title="primer"/>
+                    <span class="pagination_slide"><b>- Slajd 5 -</b></span>
+                </div>
+                
+                <div class="slide">
+                <h3>Meta tagovi</h3>
+                    <ul class="main_ul">
+                        <li>Definišu dodatne informacije koje se ne prikazuju.</li>
+                        <li>Dodatne informacije se definišu kao parovi (naziv, vrednost), tj. atributi name i content &lt;meta&gt; taga</li>
+                                <li class="second">koriste se za obezbeđivanje informacija pretraživačima interneta (yahoo, google, itd.): author, description, keywords;</li>
+                                <li class="second">informacije za druge namene (proizvoljne vrednosti).</li>
+                        <li>Atribut http-equiv definiše podatke koji opisuju stranicu (upravljaju čitačem)</li>
+                                <li class="second">http-equiv može biti: Content-Type, Refresh, Cache-Control, Pragma, itd.</li>
+                                <li class="second">a, vrednosti (content): text/html, 5, no-cache, itd.</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 6 -</b></span>
+				</div>
+                
+                <div class="slide">
+                	<h3>Primer</h3>
+                    <img src="img/primer4.png" alt="primer" title="primer"/>
+                    <p><br/>kao rezultat se dobija:</p>
+                    <img src="img/primer4-1.png" alt="primer" title="primer"/>
+                    <span class="pagination_slide"><b>- Slajd 7 -</b></span>
+                </div>
+                
+
+			<div class="descriptions2">
+              <div class="button2">
+                <ul>
+                	<li><a href="druga_lekcija.html" class="left_button">Prethodna</a></li>
+                    <li><a href="cetvrta_lekcija.html" class="right_button">Sledeća</a></li>
+                    <li><a href="test.html" class="test_button">Završni test</a></li>
+                    <li><a href="#go_to_top" class="top_button">Idi na vrh</a></li>
+                 </ul>
+              </div>
+            </div>
+             <div style="clear:both"></div>
+          </main>
+		  <footer>
+				<p><a id="go_to_bottom">Copyright</a> &copy; Petar Mulaj</p>
+				<nav> <a href="index.html">naslovna</a>|<a href="prva_lekcija.html">lekcije</a>|<a href="knjiga.html">knjiga</a>|<a href="kontakt.html">kontakt</a></nav>
+          </footer>
+        
+	</div>
+</body>
+
+</html>

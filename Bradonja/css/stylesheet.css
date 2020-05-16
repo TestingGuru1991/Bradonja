@@ -1,0 +1,652 @@
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+article, aside, footer, header, nav, section {
+	display: block;
+}
+
+body {
+	background-color: #92c5be;
+	font-size: 13px;
+	font-family: Arial, helvetica, sans-serif;
+}
+
+
+/* sadrzaj */
+#wrapper {
+	width: 96%;
+	max-width: 920px;
+	margin: 20px auto;
+	padding: 2%;
+}
+
+header section {
+	width: 200px;
+	height: 60px;
+	float: left;
+}
+
+header img {
+	float: left;
+}
+
+header h1 {
+	font-size: 17px;
+	color: white;
+	letter-spacing: -1px;
+	text-shadow: 2px 2px black;
+	padding-top: 13px;
+	padding-left: 70px;
+}
+
+header h2 {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color: white;
+	font-weight: normal;
+	padding-left: 70px;
+}
+
+header nav {
+	float: right;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav li {
+	display: inline-block;
+	margin-left: 15px;
+	padding: 5px 3px;
+	float: left;
+	height: 44px;
+	position: relative;
+}
+
+.dropdown {
+	position: absolute;
+	visibility: hidden;	
+	width: 150px;
+	top: 60px;
+	z-index: 99999;
+}
+
+.dropdown a {
+	width: 100px;
+	height: 35px;
+	border-bottom: none;
+	color: #fff;
+	background-color: #B5222D;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size:18px;
+	font-weight:lighter;
+	text-align: left;
+	text-decoration: none;
+	display: block;
+	 -webkit-transition: none;
+	 -moz-transition: none;
+	 -o-transition: none;
+	 transition: none;	
+}
+
+.dropdown a:hover {
+	height: 0px !important;
+	border-color: none !important;
+	color: black;
+}
+
+nav ul li a{
+	width: 100px;
+	height: 40px;
+	line-height: 53px;
+	border-bottom: 4px solid #636393;
+	padding:0px;
+	color: #fff;
+	font-size:18px;
+	font-weight:lighter;
+	text-align:center;
+	text-decoration: none;
+	display: block;
+	 -webkit-transition: .2s all linear;
+	 -moz-transition: .2s all linear;
+	 -o-transition: .2s all linear;
+	 transition: .2s all linear;
+}
+
+li:nth-child(1) a {
+	border-color: #636393;
+}
+
+li:nth-child(2) a {
+	border-color: #B5222D;
+}
+
+li:nth-child(3) a {
+	border-color: #D4953C;
+}
+
+li:nth-child(4) a {
+	border-color: #87A248;
+}
+
+li:nth-child(1) a:hover {
+	border-bottom: 35px solid #636393;
+	height: 9px;
+}
+
+li:nth-child(2) a:hover {
+	border-bottom: 35px solid #B5222D;
+	height: 9px;
+}
+
+li:nth-child(3) a:hover {
+	border-bottom: 35px solid #D4953C;
+	height: 9px;
+}
+
+li:nth-child(4) a:hover {
+	border-bottom: 35px solid #87A248;
+	height: 9px;
+}
+
+#banner img {
+	display: block;
+	margin-bottom: 15px;
+	width: 100%;
+	border-radius: 10px;
+}
+	
+#banner {
+	clear: both;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+
+/* Lekcije */
+main {
+	clear: both;
+	width: 100%;
+}
+
+#lections {
+	width: 60%;
+	float: left;
+	margin: 0 auto;	
+}
+
+article {
+	width: 120px;
+	height: 170px;
+	border-radius: 10px;
+	background-color: white;
+	float: left;
+	margin: 10px;
+}
+
+article>a {
+	text-decoration: none;
+	color: black;	
+}
+
+article>a:hover {
+	color: #C00;
+}
+
+.top-red {
+	width: 120px;
+	height: 60px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #C00;
+	padding-top: 10px;
+}
+
+.number {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	text-align: center;
+	border-radius: 50px;
+	margin: 0 auto;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 50px;	
+}
+
+article>h3 {
+	font-size: 16px;
+	clear: both;
+	text-align: center;
+	padding: 5px;	
+}
+
+article>p {
+	font-size: 11px;
+	padding: 7px;
+}
+
+article>p a {
+	text-decoration: none;
+	color: #C00;	
+}
+
+article>p a:hover {
+	text-decoration: underline;	
+}
+
+
+/* aside */
+aside {
+	float: right;
+	width: 35%;
+	font-size: 16px;
+	font-style: italic;
+	text-align: justify;	
+}
+
+aside>p {
+	text-indent: 15px;	
+}
+
+
+/* Opis */
+#descriptions {
+	width: 100%;
+	clear: both;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	margin-top: 20px;
+}
+
+#button {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;	
+}
+
+.descriptions2 {
+	width: 100%;
+	clear: both;
+	border-top: 1px solid #666;
+	border-bottom: 1px solid #666;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.button2 {
+	width: 60%;
+	text-align: center;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	display: inline-block;
+}
+
+.button2 ul {
+	list-style: none;	
+}
+
+.button2 ul li {
+	display: inline;
+}
+
+.button2 ul li a {
+	padding-top: 67px;
+	width: 100px;
+	display: inline-block;
+	border-radius: 10px;
+	line-height: 0;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a.right_button {
+	background: #92c5be url(../img/desno.png) no-repeat 42px 20px;
+}
+
+a.top_button {
+	background: #92c5be url(../img/gore.png) no-repeat 42px 20px;	
+}
+
+a.test_button {
+	background: #92c5be url(../img/test_dugme.png) no-repeat 42px 20px;	
+}
+
+a.bottom_button {
+	background: #92c5be url(../img/dole.png) no-repeat 42px 20px;	
+}
+
+a.left_button {
+	background: #92c5be url(../img/levo.png) no-repeat 42px 20px;	
+}
+
+a.right_button:hover {
+	background: #92c5be url(../img/desno.png) no-repeat 50px 20px;
+}
+
+a.top_button:hover {
+	background: #92c5be url(../img/gore.png) no-repeat 42px 12px;
+}
+
+a.test_button:hover {
+	background: #92c5be url(../img/test_dugme.png) no-repeat 41px 19px;	
+	background-size: 21px;
+}
+
+a.bottom_button:hover {
+	background: #92c5be url(../img/dole.png) no-repeat 42px 28px;	
+}
+
+a.left_button:hover {
+	background: #92c5be url(../img/levo.png) no-repeat 34px 20px;	
+}
+
+.button2 ul li a:hover {
+	border-bottom: none;
+	height: 0;
+}
+
+#button a {
+	text-decoration: none;	
+}
+
+span#start {
+	text-align: center;
+	color: black;
+	font-size: 22px;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #090;
+	transition-duration: 0.5s;
+	color: white;
+}
+
+#button a:hover span#start {
+	background-color: #030;
+}
+
+
+/* footer */
+footer {
+	clear: both;
+	font-size: 14px;
+	margin-top: 20px;
+}
+
+footer p {
+	float: left;
+}
+
+footer nav {
+	float: right;
+}
+
+footer nav a {
+	margin-left: 10px;
+	margin-right: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+footer nav a:hover {
+	text-decoration: underline;	
+}
+
+
+/* kontakt */
+#lections input, #lections textarea {
+	width: 90%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 1.4em;
+	margin: 0px 0px 10px 0px;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	
+}
+
+#lections textarea {
+	height: 90px;
+}
+
+#lections textarea:focus, #lections input:focus {
+	border: 2px solid #900;
+}
+
+#lections input.submit-button {
+	width: 90%;
+}
+
+label {
+	float: left;
+	text-align: left;
+	margin-right: 15px;
+	width: 90%;
+	padding-top: 5px;
+	font-size: 1.4em;
+}
+
+
+/* knjiga */
+#download-lections {
+	text-decoration: none;
+	color: white;	
+}
+
+#download {
+	width: 96%;
+	padding: 2%;
+	background-color: #F60;
+	border-radius: 10px;
+}
+
+.book-lections-about {
+	width: 47%;
+	float: left;
+	margin: 0px 20px 0px 0px;
+	height: 130px;
+}
+
+.book-lections-about a {
+	color: #F90;
+	float: right;
+}
+
+.book-lections-about img {
+	float: left;	
+}
+
+.book-lections-about strong {
+	float: left;
+	margin: 55px 0 0 10px;
+	padding: 0;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.book-lections-about p {
+	margin: 0;
+	padding: 5px 0 0 0;
+	clear: both;
+}
+
+
+/* kupi knjigu */
+#buy-book {
+	width: 60%;
+	color: white;
+}
+
+#buy-book>h1, #book-lections>h1 {
+	padding-left: 30px;
+	margin-top: 50px;
+	color: white;
+	text-shadow: 2px 2px #000;	
+}
+
+.book-no {
+	margin-top: 10px;	
+}
+
+.book-left {
+	float: left;
+	width: 40%;
+	height: 60px;
+	background-color: #030;
+	border-top-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+.book-left>strong, .book-right>p {
+	display: block;
+	padding-top: 22px;
+	padding-left: 17px;	
+}
+
+.book-right {
+	float: right;
+	width: 60%;
+	height: 60px;
+	background-color: #090;
+	border-top-right-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+
+.book-no:nth-child(2n-1) .book-left {
+	border-bottom-left-radius: 40px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 0;
+	background-color: #060;	
+}
+
+.book-no:nth-child(2n-1) .book-right {
+	border-bottom-right-radius: 40px;
+	border-top-right-radius: 0;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 0;
+	background-color: #093;	
+}
+
+
+/* slijdovi */
+main>h2 {
+	font-size: 30px;
+	color: white;
+	background-color: black;
+	width: 160px;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px #888888;
+	margin-left: 15px;
+}
+
+li.second {
+	margin-left: 35px;
+	list-style-type: circle;
+	font-style: italic;
+	color: #333;	
+}
+
+li.third {
+	margin-left: 65px;
+	list-style-type: circle;
+	font-style: italic;
+	color: #333;	
+}
+
+ul.main_ul {
+	list-style-type: disc;	
+}
+
+.slide img {
+	width: 100%;	
+}
+
+.slide {
+	background: #FFF url(../img/content.gif) repeat;
+	font-size: 20px;
+	text-indent: 5px;
+	padding: 30px;
+	border-radius: 15px;
+	box-shadow: 10px 10px 5px #888888;
+	position: relative;
+	top: -15px;
+	margin-bottom: 40px;
+}
+
+.slide>h3 {
+	font-size: 30px;
+	font-style: bold;
+	margin-bottom: 10px;
+	text-align: center;
+	text-shadow: 2px 2px #999;	
+}
+
+span.pagination_slide {
+	float: right;
+	font-size: 16px;	
+}
+
+span.red_text {
+	color: red;	
+}
+
+span.light_blue {
+	color: #06F;	
+}
+
+span.hard_blue {
+	color: #00C;	
+}
+
+span.braon {
+	color: #930;	
+}
+
+.slide img {
+	border: 1px solid #666;
+	padding: 3px;
+	background-color: #666;	
+}
+
+#reklama_knjiga {
+	position: fixed;
+	right: 0;
+	top: 150px;
+	width: 13%;
+	border-radius: 10px;
+	background: #FFF url(../img/content.gif) repeat;
+	border: 1px solid black;
+	text-align: center;
+	padding-bottom: 10px;
+	box-shadow: 3px 3px 5px #888888;
+}
+
+#reklama_knjiga a {
+	text-decoration: none;
+	color: red;	
+}
+
+#reklama_knjiga a:hover {
+	color: #900;
+}
+
+#reklama_knjiga img {
+	display: block;
+	width: 100%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;	
+}

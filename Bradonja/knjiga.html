@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet_responsive.css">
+    <title>HTML AKADEMIJA</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/meni.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+    	<header>
+        	<section>
+                <img src="img/logo.png" width="60" height="60" alt="logo">
+                <h1>BRADONJA</h1>
+                <h2>html akademija</h2>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">naslovna</a></li>
+                    <li><a href="prva_lekcija.html" onMouseOver="mopen('m1')" onMouseOut="mclosetime()">lekcije</a>
+                    	<div class="dropdown" id="m1" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+                            <a href="prva_lekcija.html">Lekcija 1</a>
+                            <a href="druga_lekcija.html">Lekcija 2</a>
+                            <a href="treca_lekcija.html">Lekcija 3</a>
+                            <a href="cetvrta_lekcija.html">Lekcija 4</a>
+                            <a href="peta_lekcija.html">Lekcija 5</a>
+                            <a href="test.html">Završni test</a>
+                        </div>
+                    </li>
+                    <li><a href="knjiga.html">knjiga</a></li>
+                    <li><a href="kontakt.html">kontakt</a></li>
+                </ul>
+            </nav>
+            <div id="banner"><img src="img/book.png" alt="knjiga"></div>
+		</header>
+        <main>
+        	<a id="download-lections" href="download/bradonja.pdf" download="newfilename"><section id="download">
+                	<h2>Preuzmi sve lekcije ovde.</h2>
+                	<strong>Poklon svim posetiocima online html akademije paket lekcija.</strong>
+      				<p>Mnogi od Vas ne žele da uče sa kompjuterskog ekrana. Bradonja misli i na Vas! Preuzmi besplatno pdf format svih lekcija!</p>
+            </section></a>
+            <section id="book-lections">
+            	<h1>Poglavlja u knjizi - HTML Basic - Sa Bradonjom je lakše!</h1>
+            	<div class="book-lections-about">
+                	<img src="img/bradonja.png" width="40" height="80" alt="bradonja">
+                	<strong>Poglavlje 1</strong>
+      				<p>World wide web, nastanak interneta, adresiranje na internetu, nacionalni i internacionalni domeni, html i osnovni tagovi.</p>
+                </div>
+                <div class="book-lections-about">
+                	<img src="img/bradonja.png" width="40" height="80" alt="bradonja">
+                	<strong>Poglavlje 2</strong>
+      				<p>Atributi, tagovi za formatiranje teksta, dopunski tagovi, tagovi ins i del, kompjuterski tagovi, skraćenice i citati.</p>
+                </div>
+                <div class="book-lections-about">
+                	<img src="img/bradonja.png" width="40" height="80" alt="bradonja">
+                	<strong>Poglavlje 3</strong>
+      				<p>Unicode, UTF-8, UTF-16, UTF-32, primeri, specijalni karakteri, meta tagovi.</p>
+                </div>
+                <div class="book-lections-about">
+                	<img src="img/bradonja.png" width="40" height="80" alt="bradonja">
+                	<strong>Poglavlje 4</strong>
+      				<p>Hiperlinkovi, link na deo stranice, email linkovi, download linkovi, slikovni linkovi.</p>
+                </div>
+                <div class="book-lections-about">
+                	<img src="img/bradonja.png" width="40" height="80" alt="bradonja">
+                	<strong>Poglavlje 5</strong>
+      				<p>Liste, nabrojive liste, neuređene liste, definicione liste, primeri za svaki tip lista.</p>
+                </div>
+                <div class="book-lections-about">
+                	<img src="img/bradonja.png" width="40" height="80" alt="bradonja">
+                	<strong>Poglavlje 6</strong>
+      				<p>Slike, slike kao mape linkova, tabele, primeri za sve navedeno, slike primera.</p>
+                </div>
+                <div class="book-lections-about">
+                	<img src="img/bradonja.png" width="40" height="80" alt="bradonja">
+                	<strong>Poglavlje 7</strong>
+      				<p>Forme, elementi forme, atributi forme, text, password, radio, checkbox, submit, reset, image, file, button, hidden.</p>
+                </div>
+                <div class="book-lections-about">
+                	<img src="img/bradonja.png" width="40" height="80" alt="bradonja">
+                	<strong>Poglavlje 8</strong>
+      				<p>Frejmovi, frameset, frame, atrbuti frejmova src i name, atribut target i njegove vrednosti, primeri frejmova.</p>
+                </div>
+                <div style="clear:both"></div>
+             </section>
+              <section id="buy-book">
+              <h1>Kupite knjigu u nekoj od prodavnica:</h1>
+            	<div class="book-no">
+                	<div class="book-left">
+						<strong>Beograd</strong>
+                     </div>
+                     <div class="book-right">
+                     	<p>Stilos |  Knjigoman  |  Solaris</p>
+                     </div>
+                     <div style="clear:both"></div>
+                </div>
+                <div class="book-no">
+                	<div class="book-left">
+						<strong>Novi Sad</strong>
+                     </div>
+                     <div class="book-right">
+                     	<p>Stilos |  Knjigoman  |  Solaris</p>
+                     </div>
+                     <div style="clear:both"></div>
+                </div>
+                <div class="book-no">
+                	<div class="book-left">
+						<strong>Subotica</strong>
+                     </div>
+                     <div class="book-right">
+                     	<p>Stilos |  Knjigoman  |  Solaris</p>
+                     </div>
+                     <div style="clear:both"></div>
+                </div>
+                <div class="book-no">
+                	<div class="book-left">
+						<strong>Niš</strong>
+                     </div>
+                     <div class="book-right">
+                     	<p>Stilos |  Knjigoman  |  Solaris</p>
+                     </div>
+                     <div style="clear:both"></div>
+                </div>
+                <div class="book-no">
+                	<div class="book-left">
+						<strong>Kragujevac</strong>
+                     </div>
+                     <div class="book-right">
+                     	<p>Stilos |  Knjigoman  |  Solaris</p>
+                     </div>
+                     <div style="clear:both"></div>
+                </div>
+                <div class="book-no">
+                	<div class="book-left">
+						<strong>Zrenjanin</strong>
+                     </div>
+                     <div class="book-right">
+                     	<p>Stilos |  Knjigoman  |  Solaris</p>
+                     </div>
+                     <div style="clear:both"></div>
+                </div>
+                <div class="book-no">
+                	<div class="book-left">
+						<strong>Kanjiža</strong>
+                     </div>
+                     <div class="book-right">
+                     	<p>Stilos |  Knjigoman  |  Solaris</p>
+                     </div>
+                     <div style="clear:both"></div>
+                </div>
+                <div class="book-no">
+                	<div class="book-left">
+						<strong>Irig</strong>
+                     </div>
+                     <div class="book-right">
+                     	<p>Stilos |  Knjigoman  |  Solaris</p>
+                     </div>
+                     <div style="clear:both"></div>
+                </div>
+                <div class="book-no">
+                	<div class="book-left">
+						<strong>Sombor</strong>
+                     </div>
+                     <div class="book-right">
+                     	<p>Stilos |  Knjigoman  |  Solaris</p>
+                     </div>
+                     <div style="clear:both"></div>
+                </div>
+                <div class="book-no">
+                	<div class="book-left">
+						<strong>Kruševac</strong>
+                     </div>
+                     <div class="book-right">
+                     	<p>Stilos |  Knjigoman  |  Solaris</p>
+                     </div>
+                     <div style="clear:both"></div>
+                </div>
+                <div style="clear:both"></div>
+            </section>
+             <div id="descriptions">
+             	<div id="button"><a href="prva_lekcija.html"><span id="start">Počni sa učenjem</span></a></div>
+             </div>
+          </main>
+		  <footer>
+				<p>Copyright &copy; Petar Mulaj</p>
+				<nav> <a href="index.html">naslovna</a>|<a href="prva_lekcija.html">lekcije</a>|<a href="knjiga.html">knjiga</a>|<a href="kontakt.html">kontakt</a></nav> 
+          </footer>
+        
+	</div>
+</body>
+
+</html>

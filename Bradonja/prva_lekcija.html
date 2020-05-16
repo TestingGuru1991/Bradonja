@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet_responsive.css">
+    <title>HTML AKADEMIJA</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/meni.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+    	<header>
+        	<section>
+                <img src="img/logo.png" width="60" height="60" alt="logo">
+                <h1>BRADONJA</h1>
+                <h2>html akademija</h2>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">naslovna</a></li>
+                    <li><a href="prva_lekcija.html" onMouseOver="mopen('m1')" onMouseOut="mclosetime()">lekcije</a>
+                    	<div class="dropdown" id="m1" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+                            <a href="prva_lekcija.html">Lekcija 1</a>
+                            <a href="druga_lekcija.html">Lekcija 2</a>
+                            <a href="treca_lekcija.html">Lekcija 3</a>
+                            <a href="cetvrta_lekcija.html">Lekcija 4</a>
+                            <a href="peta_lekcija.html">Lekcija 5</a>
+                            <a href="test.html">Završni test</a>
+                        </div>
+                    </li>
+                    <li><a href="knjiga.html">knjiga</a></li>
+                    <li><a href="kontakt.html">kontakt</a></li>
+                </ul>
+            </nav>
+            <div id="banner"><img src="img/vizija-slika.png" alt="knjiga"></div>
+		</header>
+        <main>
+        <div id="reklama_knjiga">
+        	<img src="img/basic-html-stack-3.png" alt="html knjiga" title="HTML Knjiga"><br/>
+            <h3><a href="knjiga.html">KUPI SADA!</a></h3><br/>
+            <h4>HTML Knjiga</h4>
+            <h5>Uz Bradonju je lakše</h5><br/>
+            <h5><a href="download/bradonja.pdf" download="newfilename">ili preuzmi promo verziju</a></h5>
+            <div style="clear:both"></div>
+        </div>
+        	<a id="go_to_top"></a>
+            
+            <div class="descriptions2">
+              <div class="button2">
+                <ul>
+                    <li><a href="druga_lekcija.html" class="right_button">Sledeća</a></li>
+                    <li><a href="test.html" class="test_button">Završni test</a></li>
+                    <li><a href="#go_to_bottom" class="bottom_button">Idi na kraj</a></li>
+                 </ul>
+              </div>
+            </div>
+            
+        	<h2>Lekcija 1</h2>
+            <div class="slide">
+                <h3>World Wide Web</h3>
+                    <ul class="main_ul">
+                        <li>WWW je osmišljen u CERN-u, početkom 90-tih godina prošlog veka</li>
+                        <li>Klijent-server arhitektura</li>
+                                <li class="second">Klijenti su čitači (browser)</li>
+                                <li class="second">Serveri su web serveri</li>
+                        <li>HTTP protokol – protokol za komunikaciju između web čitača i servera</li>
+                                <li class="second">Klijent traži neki resurs od servera</li>
+                                <li class="second">Server isporučuje resurs klijentu</li>
+                        <li>Resurs može biti</li>
+                                <li class="second">HTML datoteka</li>
+                                <li class="second">slika</li>
+                                <li class="second">film</li>
+                                <li class="second">itd.</li>
+                        <li>Za WWW nije neophodan internet i web server</li>
+                                <li class="second">možemo da učitamo HTML datoteku sa diska u čitač</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 1 -</b></span>
+				</div>
+                
+                <div class="slide">
+                	<h3>Adresiranje na Internetu</h3>
+                    <ul class="main_ul">
+                    	<li>Aktuelna verzija Interneta je v4</li>
+                        <li>Računari se identifikuju preko IP adrese:</li>
+                                <li class="second">a.b.c.d</li>
+                                <li class="second">a, b, c, d su brojevi u rasponu od 0 do 255</li>
+                        <li>Primer:</li>
+                        		<li class="second">147.91.173.1</li>
+                        <li>Podela IP adresa:</li>
+                                <li class="second">javne (jedinstvene na Internetu, vidljive sa svake adrese na Internetu),</li>
+                                <li class="second">privatne (unutar privatnih mreža; primer: 192.168.0.1),</li>
+                                <li class="second">specijalne namene (broadcast).</li>
+                        <li>Internet verzija 6 (v6) omogućuje postojanje većeg broja adresa</li>
+                                <li class="second">sve više računara podržava ovaj standard</li>
+                                <li class="second">Internet v4 uskoro ostaje bez javnih IP adresa</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 2 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>Adresiranje na Internetu</h3>
+                    <ul class="main_ul">
+                    	<li>Alternativan način identifikacije – simbolička adresa:</li>
+                                <li class="second"><span class="red_text">ime_računara </span>. domen</li>
+                                <li class="second">domen = <span class="light_blue">institucija </span>.<span class="hard_blue"> tip_institucije </span>.<span class="braon"> lokacija</span></li>
+                        <li>Primer:</li>
+                        		<li class="second"><span class="red_text">www </span>.<span class="braon"> uns </span>.<span class="hard_blue"> ac </span>.<span class="braon"> rs</span></li>
+                                <li class="second"><span class="red_text">www </span>.<span class="light_blue"> ftn </span>.<span class="braon"> uns </span>.<span class="hard_blue"> ac </span>.<span class="braon"> rs</span></li>
+                                <li class="second"><span class="red_text">www </span>.<span class="light_blue"> whitehouse </span>.<span class="hard_blue"> gov</span></li>
+                        <li>Domeni:</li>
+                                <li class="second">nacionalni,</li>
+                                <li class="second">internacionalni / američki</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 3 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>Nacionalni domen</h3>
+                    <ul class="main_ul">
+                    	<li>Lokacija – dvoslovna skraćenica na kraju adrese, prema ISO-3166 standardu (rs – Srbija, uk – Velika Britanija, itd.).</li>
+                        <li>Tip institucije:</li>
+                                <li class="second">ac (akademske ustanove),</li>
+                                <li class="second">co (komercijalne ustanove),</li>
+                                <li class="second">org (nekomercijalne organizacije),</li>
+                                <li class="second">itd.</li>
+                        <li>Primer nacionalnog domena iskorišćenog u internacionalne svrhe:</li>
+                        		<li class="second">www.mtv.tv (tv je skraćenica za državu Tuvalu!)</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 4 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>Internacionalni / američki domen</h3>
+                    <ul class="main_ul">
+                    	<li>Tip institucije:</li>
+                                <li class="second">edu (akademske ustanove),</li>
+                                <li class="second">com (komercijalna ustanova),</li>
+                                <li class="second">org (nekomercijalne organizacije),</li>
+                                <li class="second">mil (vojne organizacije),</li>
+                                <li class="second">gov (vladine organizacije),</li>
+                                <li class="second">itd.</li>
+                        <li>Primer:</li>
+                        		<li class="second">www.ibm.com</li>
+                                <li class="second">www.revlon.com</li>
+                                <li class="second">www.sony.com</li>
+                        <li>SAD uglavnom koriste domene: edu, gov, mil </li>
+                            	<li class="second">(www  .whitehouse . gov).</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 5 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>HTTP Protokol</h3>
+                    <img src="img/http_protokol.png" alt="HTTP Protokol" title="HTTP Protokol"/>
+                    <span class="pagination_slide"><b>- Slajd 6 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>Šta je HTML?</h3>
+                    <ul class="main_ul">
+                    	<li>HTML je skraćenica od Hyper Text Markup Language</li>
+                                <li class="second">markap jezik koji opisuje stranice koje imaju strukturu i izgled</li>
+                                <li class="second">markap jezik označava tekst</li>
+                                <li class="second">dodatnim oznakama (tagovima)</li>
+                        <li>Tekstualna datoteka</li>
+                        		<li class="second">sastoji se iz markap tagova</li>
+                                <li class="second">tagovi</li>
+                                <li class="second">ekstenzija je html ili htm</li>
+                                <li class="second">definišu strukturu HTML dokumenta</li>
+                                <li class="second">objašnjavaju čitaču kako da prikaže stranicu</li>
+                                <li class="second">svi whitespace-ovi (razmak, tab, enter) se svode na jedan</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 7 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>Primer</h3>
+                    <img src="img/primer1.png" alt="html" title="html kod"/>
+                    <span class="pagination_slide"><b>- Slajd 8 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>HTML tagovi</h3>
+                    <ul class="main_ul">
+                    	<li>Označavaju HTML elemente</li>
+                        <li>HTML element se sastoji iz</li>
+                                <li class="second">početnog (otvarajućeg) taga <span class="red_text">&lt;tag&gt;</span></li> 
+                                <li class="second">sadržaja</li>
+                                <li class="second">zatvarajućeg taga <span class="red_text">&lt;/tag&gt;</span></li>
+                        <li>Tag počinje znakom <span class="red_text">&lt;</span></li>
+                        <li>Tag se završava znakom <span class="red_text">&gt;</span></li>
+                        <li>Vrste:</li>
+                            	<li class="second">složeni (imaju i otvarajući i zatvarajući tag)</li>
+                                <li class="second">prazni (prosti) tagovi, gde nema zatvarajućeg taga i sadržaja</li>
+                                <li class="second">primer: <span class="red_text">&lt;br /&gt;</span></li>
+                                <li class="second">Tagovi ne smeju da se preklapaju</li>
+                         <li>Nisu osetljivi na mala i velika slova</li>
+                         <li>Preporuka je da se pišu malim slovima</li>
+                         <li>Potrebno za XHTML (HTML sledeće generacije)</li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 9 -</b></span>
+                </div>
+                
+                <div class="slide">
+                	<h3>Osnovni tagovi</h3>
+                    <ul class="main_ul">
+                    	<li>Tag &lt;html&gt; je okvir u kom se nalaze svi ostali tagovi</li>
+                                <li class="second">HTML dokument uvek počinje tagom <span class="red_text">&lt;html&gt;</span>, a završava se tagom <span class="red_text">&lt;/html&gt;</span>.</li> 
+                        <li>Tag <span class="red_text">&lt;head&gt;</span> uokviruje zaglavlje u kom se nalaze informacije o samom dokumentu (naslov, opis, ključne reči, ime autora, itd.); opcion je.</li>
+                        <li>Sve ono što vidimo u prozoru browser-a, tj. sadržaj stranice, nalazi se u telu dokumenta koje uokviruje element <span class="red_text">&lt;body&gt;</span></li>
+                            	<li class="second">u dokumentu sme da postoji samo jedan par tagova <span class="red_text">&lt;body&gt;&lt;/body&gt;.</span></li>
+                    </ul>
+                    <span class="pagination_slide"><b>- Slajd 10 -</b></span>
+                </div>
+
+		<div class="descriptions2">
+       	  <div class="button2">
+          	<ul>
+          		<li><a href="druga_lekcija.html" class="right_button">Sledeća</a></li>
+          		<li><a href="test.html" class="test_button">Završni test</a></li>
+                <li><a href="#go_to_top" class="top_button">Idi na vrh</a></li>
+             </ul>
+          </div>
+        </div>
+             <div style="clear:both"></div>
+          </main>
+		  <footer>
+				<p><a id="go_to_bottom">Copyright</a> &copy; Petar Mulaj</p>
+				<nav> <a href="index.html">naslovna</a>|<a href="prva_lekcija.html">lekcije</a>|<a href="knjiga.html">knjiga</a>|<a href="kontakt.html">kontakt</a></nav>
+          </footer>
+        
+	</div>
+</body>
+
+</html>

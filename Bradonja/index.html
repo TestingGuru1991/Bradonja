@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet_responsive.css">
+    <title>HTML AKADEMIJA</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+    
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script src="js/meni.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+    	<header>
+        	<section>
+                <img src="img/logo.png" width="60" height="60" alt="logo">
+                <h1>BRADONJA</h1>
+                <h2>html akademija</h2>
+            </section>
+            <nav>
+                <ul>
+                    <li><a href="index.html">naslovna</a></li>
+                    <li><a href="prva_lekcija.html" onMouseOver="mopen('m1')" onMouseOut="mclosetime()">lekcije</a>
+                    	<div class="dropdown" id="m1" onMouseOver="mcancelclosetime()" onMouseOut="mclosetime()">
+                            <a href="prva_lekcija.html">Lekcija 1</a>
+                            <a href="druga_lekcija.html">Lekcija 2</a>
+                            <a href="treca_lekcija.html">Lekcija 3</a>
+                            <a href="cetvrta_lekcija.html">Lekcija 4</a>
+                            <a href="peta_lekcija.html">Lekcija 5</a>
+                            <a href="test.html">Završni test</a>
+                        </div>
+                    </li>
+                    <li><a href="knjiga.html">knjiga</a></li>
+                    <li><a href="kontakt.html">kontakt</a></li>
+                </ul>
+            </nav>
+            <div id="banner"><img src="img/naslovna2.png" alt="banner" /></div>
+		</header>
+        <main>
+            <section id="lections">
+                <article>
+                	<a href="download/bradonja.pdf" download="newfilename">
+                        <div class="top-red">
+                            <div class="number">D</div>
+                        </div>
+                    </a>
+                            <h3>Preuzmi</h3>
+                            <p>Ovde možete preuzeti besplatno pdf paket lekcija. <a href="download/bradonja.pdf" download="newfilename">Preuzmi</a></p>
+                </article>
+                <article>
+                	<a href="prva_lekcija.html">
+                        <div class="top-red">
+                            <div class="number">1</div>
+                        </div>
+                    </a>
+                            <h3>Lekcija 1</h3>
+                            <p>Nastanak interneta, adresiranje, html i osnovni tagovi. <a href="prva_lekcija.html">Pročitaj više</a></p>
+                </article>
+                <article>
+                	<a href="druga_lekcija.html">
+                        <div class="top-red">
+                            <div class="number">2</div>
+                        </div>
+                     </a>
+                            <h3>Lekcija 2</h3>
+                            <p>Atributi, tagovi za teksta, skraćenice, spec. karakteri. <a href="druga_lekcija.html">Pročitaj više</a></p>
+                    
+                </article>
+                <article>
+                	<a href="treca_lekcija.html">
+                        <div class="top-red">
+                            <div class="number">3</div>
+                        </div>
+                    </a>
+                            <h3>Lekcija 3</h3>
+                            <p>Unicode, spec. karakteri, meta tagovi, primeri. <a href="treca_lekcija.html">Pročitaj više</a></p>
+                </article>
+                <article>
+                	<a href="cetvrta_lekcija.html">
+                        <div class="top-red">
+                            <div class="number">4</div>
+                        </div>
+                    </a>
+                            <h3>Lekcija 4</h3>
+                            <p>Hiperlinkovi, email, download, slikovni, link na deo strane. <a href="cetvrta_lekcija.html">Pročitaj više</a></p>
+                </article>
+                <article>
+                	<a href="peta_lekcija.html">
+                        <div class="top-red">
+                            <div class="number">5</div>
+                        </div>
+                    </a>
+                            <h3>Lekcija 5</h3>
+                            <p>Liste: nabrojive, neuređene, definicione liste. <a href="peta_lekcija.html">Pročitaj više</a></p>
+                </article>
+             </section>
+             <aside>
+             	<h1>Bradonjina vizija</h1><br/>
+    				<p>U današnje vreme dinamički život je zamenio statički. Upravo takav život zahteva i dinamičko sticanje znanja. Današnji zahtevi su da ljudi svih uzrasta znaju da naprave jednostavnu web prezentaciju. Jedna od mogućnosti koja se pruža, a pri tome je potpuno besplatna, je učenje preko web sajtova posebno kreiranih za date svrhe. Online učenje je, u skladu sa mogućnostima današnjeg čoveka, najbolji način sticanja znanja. Web sajt "Bradonja" - html akademija je tu upravo iz tih razloga. Nauči još danas da praviš web sajtove!</p>
+             </aside>
+             <div id="descriptions">
+             	<div id="button"><a href="prva_lekcija.html"><span id="start">Počni sa učenjem</span></a></div>
+             </div>
+             <div style="clear:both"></div>
+          </main>
+		  <footer>
+				<p>Copyright &copy; Petar Mulaj</p>
+				<nav> <a href="index.html">naslovna</a>|<a href="prva_lekcija.html">lekcije</a>|<a href="knjiga.html">knjiga</a>|<a href="kontakt.html">kontakt</a></nav> 
+          </footer>
+        
+	</div>
+</body>
+
+</html>
